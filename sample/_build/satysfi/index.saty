@@ -1,0 +1,26 @@
+@require: stdjabook
+@require: code
+@require: itemize
+@require: tabular
+
+document (|
+  title = {SATySFi Builder};
+  author = {shirou};
+  show-title = true;
+  show-toc = true;
+|) '<
+  +section  ?:(`welcome-to-satysfi-builder-s-documentation`) {Welcome to SATySFi builder's documentation!}<
+    +listing{
+
+ * @<chap>{sample}    +listing{
+ ** @<chap>{sampleansible}
+    }
+    }>
+
+    +subsection  ?:(`indices-and-tables`) {Indices and tables}<
+    +listing{
+
+ * @<chap>{genindex}
+ * @<chap>{py-modindex}
+ * @<chap>{search}
+    }>>
