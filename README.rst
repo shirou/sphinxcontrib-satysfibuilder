@@ -21,7 +21,8 @@ Install
 
 ::
 
-   % pip install -e https://github.com/shirou/sphinxcontrib-satysfibuilder
+   % pip install -e "git+https://github.com/shirou/sphinxcontrib-satysfibuilder#egg=sphinxcontrib_satysfibuilder"
+
 
 
 Configure Sphinx
@@ -35,6 +36,11 @@ option at `conf.py`.
    # Enabled extensions
    extensions = ['sphinxcontrib.satysfibuilder']
 
+   # Add title, author information
+   satisfy_documents = [
+       (master_doc, 'SATySFi.saty', 'SATySFi Builder', 'shirou'),
+   ]
+
 
 How to use
 =====================
@@ -43,10 +49,14 @@ How to use
 
   % make satysfi
 
+
 Repository
 ==========
 
 https://github.com/shirou/sphinxcontrib-satysfibuilder
+
+Sample
+-------
 
 
 
