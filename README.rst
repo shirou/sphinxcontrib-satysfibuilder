@@ -1,12 +1,6 @@
 Sphinx SATySFi builder
 =============================
 
-.. image:: https://badge.fury.io/py/sphinxcontrib-satysfibuilder.svg
-    :target: https://badge.fury.io/py/sphinxcontrib-satysfibuilder
-
-.. image:: https://circleci.com/gh/shirou/sphinxcontrib-satysfibuilder.svg?style=svg
-    :target: https://circleci.com/gh/shirou/sphinxcontrib-satysfibuilder
-
 Sphinx to SATySFi builder.
 
 Note: This is just a trial builder. It will NOT publish to pypi and not implement all of SATySFi features.

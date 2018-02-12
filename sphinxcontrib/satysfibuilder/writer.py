@@ -38,22 +38,6 @@ class SATySFiWriter(writers.Writer):
 
 
 class SATySFiTranslator(TextTranslator):
-    sectionchar = u"="
-
-    admonitionlabels = {
-        "note": "note",
-        "tip": "tip",
-        "info": "info",
-        "warning": "warning",
-        "important": "important",
-        "caution": "caution",
-        "notice": "notice",
-        "attention": "notice",
-        "danger": "caution",
-        "error": "caution",
-        "hint": "info",
-    }
-
     def add_lines(self, lines):
         self.states[-1].append((0, lines))
 
@@ -150,6 +134,18 @@ class SATySFiTranslator(TextTranslator):
         self.add_text('\emph{')
 
     def depart_literal_emphasis(self, node):
+        self.add_text('}')
+
+    def visit_strong(self, node):
+        self.add_text('\emph{')
+
+    def depart_strong(self, node):
+        self.add_text('}')
+
+    def visit_literal_strong(self, node):
+        self.add_text('\emph{')
+
+    def depart_literal_strong(self, node):
         self.add_text('}')
 
     def visit_list_item(self, node):

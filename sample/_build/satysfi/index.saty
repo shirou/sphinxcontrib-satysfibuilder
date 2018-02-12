@@ -10,17 +10,17 @@ document (|
   show-toc = true;
 |) '<
   +section  ?:(`welcome-to-satysfi-builder-s-documentation`) {Welcome to SATySFi builder's documentation!}<
-    +listing{
+Contents:    +listing{
 
- * @<chap>{sample}    +listing{
- ** @<chap>{sampleansible}
+ * はじめに    +listing{
+ ** Ansibleの特徴
     }
     }>
 
     +subsection  ?:(`indices-and-tables`) {Indices and tables}<
     +listing{
 
- * @<chap>{genindex}
- * @<chap>{py-modindex}
- * @<chap>{search}
+ * 索引
+ * モジュール索引
+ * 検索ページ
     }>>
